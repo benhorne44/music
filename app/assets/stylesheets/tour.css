@@ -1,0 +1,207 @@
+div.tour_dates_header {
+  width: 310px;
+  height: 60px;
+  background-image: url('tour_dates_header_bg.png');
+  background-repeat: repeat-x;
+}
+div.tour_dates_header h1 {
+  float: left;
+  margin-left: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 48px;
+  line-height: 63px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+div.tour_dates_header a {
+  float: right;
+  margin-right: 10px;
+  margin-top: 37px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 12px;
+  color: #fbe6a2;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+div.tour_dates_header a:hover {
+  color: #fbe6a2;
+  text-decoration: underline;
+}
+div.tour_dates_content_module {
+  margin-top: 1px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 270px;
+  height: auto;
+  background-image: url('tour_dates_content_bg.png');
+  background-repeat: repeat;
+}
+div.tour_dates_content_module div.dates {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: #fbe6a2;
+}
+div.tour_dates_content_module div.dates p.month {
+  margin-top: 10px;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  color: #818378;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+}
+div.tour_dates_content_module div.dates p.day {
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 24px;
+  line-height: 10px;
+  color: #181a1f;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+}
+div.tour_dates_content_module div.tour_info {
+  float: left;
+  margin-left: 20px;
+  display: block;
+  width: 200px;
+}
+div.tour_dates_content_module div.tour_info p.city {
+  padding-bottom: 5px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  color: #f6eee1;
+}
+div.tour_dates_content_module div.tour_info p.artist {
+  padding-bottom: 5px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 12px;
+  color: #fbe6a2;
+  font-weight: bold;
+  font-style: italic;
+}
+div.tour_dates_content_module div.tour_info p.sub_artist {
+  padding-bottom: 12px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f6eee1;
+}
+div.tour_dates_content_module div.tour_info p.more_info {
+  margin-left: -8px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 10px;
+  color: #f6eee1;
+  font-weight: bold;
+}
+div.tour_dates_content_module div.tour_info p.more_info a {
+  padding-right: 8px;
+  padding-left: 8px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 10px;
+  color: #fbe6a2;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+div.tour_dates_content_module div.tour_info p.more_info a:hover {
+  text-decoration: underline;
+}
+div.tour_dates_content {
+  margin-top: 1px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 595px;
+  height: auto;
+  background-image: url('tour_dates_content_bg.png');
+  background-repeat: repeat;
+}
+div.tour_dates_content div.dates {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: #fbe6a2;
+}
+div.tour_dates_content div.dates p.month {
+  margin-top: 10px;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  color: #818378;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+}
+div.tour_dates_content div.dates p.day {
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 24px;
+  line-height: 10px;
+  color: #181a1f;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+}
+div.tour_dates_content div.tour_info {
+  float: left;
+  margin-left: 20px;
+  display: block;
+  width: 280px;
+}
+div.tour_dates_content div.tour_info p.city {
+  padding-bottom: 5px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  color: #f6eee1;
+}
+div.tour_dates_content div.tour_info p.artist {
+  padding-bottom: 5px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 12px;
+  color: #fbe6a2;
+  font-weight: bold;
+  font-style: italic;
+}
+div.tour_dates_content div.tour_info p.sub_artist {
+  padding-bottom: 12px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f6eee1;
+}
+div.tour_dates_content div.more_info {
+  float: right;
+  display: block;
+}
+div.tour_dates_content div.more_info p {
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 10px;
+  color: #fff;
+}
+div.tour_dates_content div.more_info a {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 10px;
+  color: #fbe6a2;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+div.tour_dates_content div.more_info a:hover {
+  text-decoration: underline;
+}

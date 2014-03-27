@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'JLEERegular';
+    src: url('/css/fonts/jlee-webfont.eot');
+    src: url('/css/fonts/jlee-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/jlee-webfont.woff') format('woff'),
+         url('/css/fonts/jlee-webfont.ttf') format('truetype'),
+         url('/css/fonts/jlee-webfont.svg#JLEERegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'LondrinaSolidRegular';
+    src: url('/css/fonts/londrinasolid-regular-webfont.eot');
+    src: url('/css/fonts/londrinasolid-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/londrinasolid-regular-webfont.woff') format('woff'),
+         url('/css/fonts/londrinasolid-regular-webfont.ttf') format('truetype'),
+         url('/css/fonts/londrinasolid-regular-webfont.svg#LondrinaSolidRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansCondensedBold';
+    src: url('/css/fonts/opensans-condbold-webfont.eot');
+    src: url('/css/fonts/opensans-condbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/opensans-condbold-webfont.woff') format('woff'),
+         url('/css/fonts/opensans-condbold-webfont.ttf') format('truetype'),
+         url('/css/fonts/opensans-condbold-webfont.svg#OpenSansCondensedBold') format('svg');
+  font-weight: normal;
+    font-style: normal;         
+}
+@font-face {
+  font-family: 'OpenSansCondensedLightRegular';
+    src: url('/css/fonts/opensans-condlight-webfont.eot');
+    src: url('/css/fonts/opensans-condlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/opensans-condlight-webfont.woff') format('woff'),
+         url('/css/fonts/opensans-condlight-webfont.ttf') format('truetype'),
+         url('/css/fonts/opensans-condlight-webfont.svg#OpenSansCondensedLightRegular') format('svg');
+  font-weight: normal;
+    font-style: normal;         
+}
+@font-face {
+  font-family: 'OpenSansCondensedLightItalic';
+    src: url('/css/fonts/opensans-condlightitalic-webfont.eot');
+    src: url('/css/fonts/opensans-condlightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/opensans-condlightitalic-webfont.woff') format('woff'),
+         url('/css/fonts/opensans-condlightitalic-webfont.ttf') format('truetype'),
+         url('/css/fonts/opensans-condlightitalic-webfont.svg#OpenSansCondensedLightItalic') format('svg');
+  font-weight: normal;
+    font-style: normal;         
+}

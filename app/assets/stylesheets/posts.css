@@ -1,0 +1,154 @@
+div.post_content_container {
+  margin-top: 2px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 595px;
+  height: auto;
+  background-image: url('../images/news_content_bg.png');
+  background-repeat: repeat;
+}
+div.post_content_container div.post_content {
+  text-align: center;
+}
+div.post_content_container div.post_content div.photo_caption {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 16px;
+  color: #000;
+}
+div.post_content_container div.post_content div.photo_caption a {
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 13px;
+  color: #818378;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+div.post_content_container div.post_content div.photo_caption a:hover {
+  text-decoration: underline;
+}
+div.post_content_container div.post_content div.video_caption {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  font-size: 14px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 16px;
+  color: #000;
+  text-align: left;
+}
+div.post_content_container div.post_content div.video_caption a {
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 13px;
+  color: #818378;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+div.post_content_container div.post_content div.video_caption a:hover {
+  text-decoration: underline;
+}
+div.news_content_container {
+  margin-top: 2px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 595px;
+  height: auto;
+  background-image: url('../images/news_content_bg.png');
+  background-repeat: repeat;
+}
+div.news_content_container div.title_top h2 {
+  margin-bottom: 10px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 18px;
+  color: #818378;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+div.news_content_container div.news_content {
+  overflow-x: hidden;
+}
+div.news_content_container div.news_content p {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000;
+}
+div.news_content_container div.news_content p a {
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 13px;
+  color: #818378;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+div.news_content_container div.news_content p a:hover {
+  text-decoration: underline;
+}
+div.audio_content_container {
+  margin-top: 1px;
+  padding: 20px;
+  width: 595px;
+  height: auto;
+  background-image: url("/images/tour_dates_content_bg.png");
+  background-repeat: repeat;
+}
+div.audio_content_container div.audio_content div.caption {
+  font-size: 14px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 16px;
+  color: #818378;
+}
+div.post_error_content_container {
+  margin-top: 2px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 595px;
+  height: auto;
+  background-image: url('../images/news_content_bg.png');
+  background-repeat: repeat;
+}
+div.post_error_content_container div.post_error_content {
+  font-size: 14px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 16px;
+  color: #000;
+  text-align: left;
+}
+div.pagination {
+  margin-top: 10px;
+}
+div.pagination a.prev_page {
+  float: left;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 17px;
+  color: #000;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+div.pagination a.prev_page:hover {
+  text-decoration: underline;
+}
+div.pagination a.next_page {
+  float: right;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 17px;
+  color: #000;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+div.pagination a.next_page:hover {
+  text-decoration: underline;
+}
