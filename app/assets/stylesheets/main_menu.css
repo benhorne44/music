@@ -108,7 +108,6 @@ div.nav_container ul.navigation li a.photos.active {
 }
 div.nav_container ul.navigation li a.store {
   margin-right: 0;
-  /* last item doesn't need margin-right */
 
   width: 111px;
   height: 41px;
@@ -116,6 +115,7 @@ div.nav_container ul.navigation li a.store {
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
+
 div.nav_container ul.navigation li a.store:hover,
 div.nav_container ul.navigation li a.store.active {
   color: #fff;
@@ -123,3 +123,4 @@ div.nav_container ul.navigation li a.store.active {
   background-repeat: no-repeat;
   background-position: 0px -42px;
 }
+

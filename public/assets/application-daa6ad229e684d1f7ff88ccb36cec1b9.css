@@ -1,3 +1,406 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/*@font-face {
+    font-family: 'JLEERegular';
+    src: url('/css/fonts/jlee-webfont.eot');
+    src: url('/css/fonts/jlee-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/jlee-webfont.woff') format('woff'),
+         url('/css/fonts/jlee-webfont.ttf') format('truetype'),
+         url('/css/fonts/jlee-webfont.svg#JLEERegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'LondrinaSolidRegular';
+    src: url('/css/fonts/londrinasolid-regular-webfont.eot');
+    src: url('/css/fonts/londrinasolid-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/londrinasolid-regular-webfont.woff') format('woff'),
+         url('/css/fonts/londrinasolid-regular-webfont.ttf') format('truetype'),
+         url('/css/fonts/londrinasolid-regular-webfont.svg#LondrinaSolidRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansCondensedBold';
+    src: url('/css/fonts/opensans-condbold-webfont.eot');
+    src: url('/css/fonts/opensans-condbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/opensans-condbold-webfont.woff') format('woff'),
+         url('/css/fonts/opensans-condbold-webfont.ttf') format('truetype'),
+         url('/css/fonts/opensans-condbold-webfont.svg#OpenSansCondensedBold') format('svg');
+  font-weight: normal;
+    font-style: normal;         
+}
+@font-face {
+  font-family: 'OpenSansCondensedLightRegular';
+    src: url('/css/fonts/opensans-condlight-webfont.eot');
+    src: url('/css/fonts/opensans-condlight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/opensans-condlight-webfont.woff') format('woff'),
+         url('/css/fonts/opensans-condlight-webfont.ttf') format('truetype'),
+         url('/css/fonts/opensans-condlight-webfont.svg#OpenSansCondensedLightRegular') format('svg');
+  font-weight: normal;
+    font-style: normal;         
+}
+@font-face {
+  font-family: 'OpenSansCondensedLightItalic';
+    src: url('/css/fonts/opensans-condlightitalic-webfont.eot');
+    src: url('/css/fonts/opensans-condlightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/css/fonts/opensans-condlightitalic-webfont.woff') format('woff'),
+         url('/css/fonts/opensans-condlightitalic-webfont.ttf') format('truetype'),
+         url('/css/fonts/opensans-condlightitalic-webfont.svg#OpenSansCondensedLightItalic') format('svg');
+  font-weight: normal;
+    font-style: normal;         
+}
+*/
+
+/*div.graphic_container div.graphic div.gallery {
+  position: relative;
+}
+div.graphic_container div.graphic div.gallery div.gallery_item {
+  display: none;
+}
+div.graphic_container div.graphic div.gallery div.gallery_item.active {
+  display: block;
+}
+div.graphic_container div.graphic div.gallery div.menu {
+  position: absolute;
+  padding: 5px;
+  bottom: 10px;
+  right: 10px;
+  background-color: #000;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+div.graphic_container div.graphic div.gallery div.menu div.menu_item {
+  margin: 0 2px;
+  width: 10px;
+  height: 10px;
+  float: left;
+  cursor: pointer;
+  text-indent: -50px;
+  overflow: hidden;
+  font: 'Arial', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  background-color: #E8C873;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+div.graphic_container div.graphic div.gallery div.menu div.menu_item:hover,
+div.graphic_container div.graphic div.gallery div.menu div.menu_item.active {
+  background-color: #FFF;
+}
+*/
+
+
+/*.branding {*/
+  
+  /*background-image: url('branding.png');*/
+  /*background-repeat:no-repeat;*/
+  
+  /*font-size: 6.25em;
+  font-weight:  500;
+  font-family: 'Londrina Solid', helvetica, arial, sans-serif;
+  height: 80px;
+  text-align: center;
+}*/
+
+/*div.nav_container {
+  margin: 0 auto;
+  width: 960px;
+  height: 41px;
+  display: block;
+}
+div.nav_container ul.navigation {
+  list-style-type: none;
+}
+div.nav_container ul.navigation li {
+  display: inline;
+}
+div.nav_container ul.navigation li a {
+  float: left;
+  margin-right: 22px;
+  font-family: 'Londrina Solid', helvetica, arial, sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #181a1f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+}
+div.nav_container ul.navigation li a.home {
+  width: 100px;
+  height: 41px;
+  background-image: url('home_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+div.nav_container ul.navigation li a.home:hover,
+div.nav_container ul.navigation li a.home.active {
+  color: #fff;
+  background-image: url('home_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px -42px;
+}
+div.nav_container ul.navigation li a.news {
+  width: 170px;
+  height: 41px;
+  background-image: url('news_blog_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+div.nav_container ul.navigation li a.news:hover,
+div.nav_container ul.navigation li a.news.active {
+  color: #fff;
+  background-image: url('news_blog_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px -42px;
+}
+div.nav_container ul.navigation li a.shows {
+  width: 102px;
+  height: 41px;
+  background-image: url('tour_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+div.nav_container ul.navigation li a.shows:hover,
+div.nav_container ul.navigation li a.shows.active {
+  color: #fff;
+  background-image: url('tour_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px -42px;
+}
+div.nav_container ul.navigation li a.music {
+  width: 107px;
+  height: 41px;
+  background-image: url('music_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+div.nav_container ul.navigation li a.music:hover,
+div.nav_container ul.navigation li a.music.active {
+  color: #fff;
+  background-image: url('music_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px -42px;
+}
+div.nav_container ul.navigation li a.videos {
+  width: 106px;
+  height: 41px;
+  background-image: url('video_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+div.nav_container ul.navigation li a.videos:hover,
+div.nav_container ul.navigation li a.videos.active {
+  color: #fff;
+  background-image: url('video_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px -42px;
+}
+div.nav_container ul.navigation li a.photos {
+  width: 129px;
+  height: 41px;
+  background-image: url('photos_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+div.nav_container ul.navigation li a.photos:hover,
+div.nav_container ul.navigation li a.photos.active {
+  color: #fff;
+  background-image: url('photos_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px -42px;
+}
+div.nav_container ul.navigation li a.store {
+  margin-right: 0;
+  /* last item doesn't need margin-right 
+
+  width: 111px;
+  height: 41px;
+  background-image: url('store_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+div.nav_container ul.navigation li a.store:hover,
+div.nav_container ul.navigation li a.store.active {
+  color: #fff;
+  background-image: url('store_bg_sprite.png');
+  background-repeat: no-repeat;
+  background-position: 0px -42px;
+}
+*/
+*/
+div.post_content_container {
+  margin-top: 2px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 595px;
+  height: auto;
+  background-image: url('../images/news_content_bg.png');
+  background-repeat: repeat;
+}
+div.post_content_container div.post_content {
+  text-align: center;
+}
+div.post_content_container div.post_content div.photo_caption {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 16px;
+  color: #000;
+}
+div.post_content_container div.post_content div.photo_caption a {
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 13px;
+  color: #818378;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+div.post_content_container div.post_content div.photo_caption a:hover {
+  text-decoration: underline;
+}
+div.post_content_container div.post_content div.video_caption {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  font-size: 14px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 16px;
+  color: #000;
+  text-align: left;
+}
+div.post_content_container div.post_content div.video_caption a {
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 13px;
+  color: #818378;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+div.post_content_container div.post_content div.video_caption a:hover {
+  text-decoration: underline;
+}
+div.news_content_container {
+  margin-top: 2px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 595px;
+  height: auto;
+  background-image: url('../images/news_content_bg.png');
+  background-repeat: repeat;
+}
+div.news_content_container div.title_top h2 {
+  margin-bottom: 10px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 18px;
+  color: #818378;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+div.news_content_container div.news_content {
+  overflow-x: hidden;
+}
+div.news_content_container div.news_content p {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000;
+}
+div.news_content_container div.news_content p a {
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 13px;
+  color: #818378;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+div.news_content_container div.news_content p a:hover {
+  text-decoration: underline;
+}
+div.audio_content_container {
+  margin-top: 1px;
+  padding: 20px;
+  width: 595px;
+  height: auto;
+  background-image: url("/images/tour_dates_content_bg.png");
+  background-repeat: repeat;
+}
+div.audio_content_container div.audio_content div.caption {
+  font-size: 14px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 16px;
+  color: #818378;
+}
+div.post_error_content_container {
+  margin-top: 2px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 595px;
+  height: auto;
+  background-image: url('../images/news_content_bg.png');
+  background-repeat: repeat;
+}
+div.post_error_content_container div.post_error_content {
+  font-size: 14px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 16px;
+  color: #000;
+  text-align: left;
+}
+div.pagination {
+  margin-top: 10px;
+}
+div.pagination a.prev_page {
+  float: left;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 17px;
+  color: #000;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+div.pagination a.prev_page:hover {
+  text-decoration: underline;
+}
+div.pagination a.next_page {
+  float: right;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 17px;
+  color: #000;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+div.pagination a.next_page:hover {
+  text-decoration: underline;
+}
+
 @import 'main_menu.css';
 @import 'homepage_gallery.css';
 @import 'posts.css';
@@ -272,7 +675,7 @@ img.center {
 .news_content img {
   margin-bottom: 10px;
 }
-
+-------
 a.grey {
   font-family: georgia, helvetica, arial, sans-serif;
   font-size: 12px;
@@ -802,5 +1205,213 @@ li.white_item a:hover {
     height: auto;
   background-image: url('news_content_bg.png');
   background-repeat: repeat;
+}
+*/*/*/*/
+div.tour_dates_header {
+  width: 310px;
+  height: 60px;
+  background-image: url('tour_dates_header_bg.png');
+  background-repeat: repeat-x;
+}
+div.tour_dates_header h1 {
+  float: left;
+  margin-left: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 48px;
+  line-height: 63px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+div.tour_dates_header a {
+  float: right;
+  margin-right: 10px;
+  margin-top: 37px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 12px;
+  color: #fbe6a2;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-decoration: none;
+}
+div.tour_dates_header a:hover {
+  color: #fbe6a2;
+  text-decoration: underline;
+}
+div.tour_dates_content_module {
+  margin-top: 1px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 270px;
+  height: auto;
+  background-image: url('tour_dates_content_bg.png');
+  background-repeat: repeat;
+}
+div.tour_dates_content_module div.dates {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: #fbe6a2;
+}
+div.tour_dates_content_module div.dates p.month {
+  margin-top: 10px;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  color: #818378;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+}
+div.tour_dates_content_module div.dates p.day {
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 24px;
+  line-height: 10px;
+  color: #181a1f;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+}
+div.tour_dates_content_module div.tour_info {
+  float: left;
+  margin-left: 20px;
+  display: block;
+  width: 200px;
+}
+div.tour_dates_content_module div.tour_info p.city {
+  padding-bottom: 5px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  color: #f6eee1;
+}
+div.tour_dates_content_module div.tour_info p.artist {
+  padding-bottom: 5px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 12px;
+  color: #fbe6a2;
+  font-weight: bold;
+  font-style: italic;
+}
+div.tour_dates_content_module div.tour_info p.sub_artist {
+  padding-bottom: 12px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f6eee1;
+}
+div.tour_dates_content_module div.tour_info p.more_info {
+  margin-left: -8px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 10px;
+  color: #f6eee1;
+  font-weight: bold;
+}
+div.tour_dates_content_module div.tour_info p.more_info a {
+  padding-right: 8px;
+  padding-left: 8px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 10px;
+  color: #fbe6a2;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+div.tour_dates_content_module div.tour_info p.more_info a:hover {
+  text-decoration: underline;
+}
+div.tour_dates_content {
+  margin-top: 1px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  width: 595px;
+  height: auto;
+  background-image: url('tour_dates_content_bg.png');
+  background-repeat: repeat;
+}
+div.tour_dates_content div.dates {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background-color: #fbe6a2;
+}
+div.tour_dates_content div.dates p.month {
+  margin-top: 10px;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  color: #818378;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+}
+div.tour_dates_content div.dates p.day {
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 24px;
+  line-height: 10px;
+  color: #181a1f;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -1px;
+}
+div.tour_dates_content div.tour_info {
+  float: left;
+  margin-left: 20px;
+  display: block;
+  width: 280px;
+}
+div.tour_dates_content div.tour_info p.city {
+  padding-bottom: 5px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  color: #f6eee1;
+}
+div.tour_dates_content div.tour_info p.artist {
+  padding-bottom: 5px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 12px;
+  color: #fbe6a2;
+  font-weight: bold;
+  font-style: italic;
+}
+div.tour_dates_content div.tour_info p.sub_artist {
+  padding-bottom: 12px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f6eee1;
+}
+div.tour_dates_content div.more_info {
+  float: right;
+  display: block;
+}
+div.tour_dates_content div.more_info p {
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 10px;
+  color: #fff;
+}
+div.tour_dates_content div.more_info a {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: georgia, helvetica, arial, sans-serif;
+  font-size: 10px;
+  color: #fbe6a2;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+div.tour_dates_content div.more_info a:hover {
+  text-decoration: underline;
 }
 
