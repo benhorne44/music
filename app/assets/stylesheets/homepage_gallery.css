@@ -1,4 +1,4 @@
-/*div.graphic_container div.graphic div.gallery {
+div.graphic_container div.graphic div.gallery {
   position: relative;
 }
 div.graphic_container div.graphic div.gallery div.gallery_item {
@@ -38,4 +38,4 @@ div.graphic_container div.graphic div.gallery div.menu div.menu_item:hover,
 div.graphic_container div.graphic div.gallery div.menu div.menu_item.active {
   background-color: #FFF;
 }
-*/
+

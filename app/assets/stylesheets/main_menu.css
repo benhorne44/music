@@ -1,4 +1,4 @@
-/*div.nav_container {
+div.nav_container {
   margin: 0 auto;
   width: 960px;
   height: 41px;
@@ -108,7 +108,7 @@ div.nav_container ul.navigation li a.photos.active {
 }
 div.nav_container ul.navigation li a.store {
   margin-right: 0;
-  /* last item doesn't need margin-right */
+  /* last item doesn't need margin-right 
 
   width: 111px;
   height: 41px;
