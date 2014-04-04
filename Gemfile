@@ -8,6 +8,8 @@ gem 'pg'
 gem 'twitter'
 gem 'twitter-text'
 gem "figaro"
+gem 'faraday'
+gem 'tumblr_client'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
