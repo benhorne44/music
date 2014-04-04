@@ -531,7 +531,7 @@ input.submit {
   background-repeat: no-repeat;
   border: none;
   display: block;
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;*/
 }
 .footer_container_bottom {
   width: 100%;
