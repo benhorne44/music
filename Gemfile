@@ -9,6 +9,7 @@ gem 'twitter'
 gem 'twitter-text'
 gem "figaro"
 gem 'faraday'
+gem 'addressable'
 gem 'tumblr_client'
 
 # Use SCSS for stylesheets
