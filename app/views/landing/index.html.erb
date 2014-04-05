@@ -136,60 +136,33 @@
   </div>
   <div class="middle_column">
     <div class="module tour_module">
-  <div class="tour_dates_header">
-    <h1>Tour Dates</h1>
-    <a href="/shows/">view all</a>
-  </div>
-  <div class="entries_container"><div class="tour_dates_content_module">
-  <div class="dates">
-    <p class="month">MAR</p>
-    <p class="day">22</p>
-  </div>
-  <div class="tour_info">
-    <p class="city">Avon, CO | 9:30PM</p>
-    <p class="artist">Agave</p>
-    <p class="sub_artist">w/ Todd Park Mohr</p>
-    <p class="more_info"><a href="http://goo.gl/awLdJn">Tickets</a>|<a href="https://twitter.com/intent/tweet?text=Check%20out%20Zach%20Heckendorf%20on%20tour!&amp;url=http://zachheckendorf.com/shows/" target="_blank">Tweet</a></p>
-  </div>
-  <div class="clear"></div>     
-</div><div class="tour_dates_content_module">
-  <div class="dates">
-    <p class="month">MAY</p>
-    <p class="day">1</p>
-  </div>
-  <div class="tour_info">
-    <p class="city">New York, NY | 8:00PM</p>
-    <p class="artist">The Beacon Theatre</p>
-    <p class="sub_artist">w/ Rodrigo Y Gabriela</p>
-    <p class="more_info"><a href="http://goo.gl/gBGMft">Tickets</a>|<a href="https://twitter.com/intent/tweet?text=Check%20out%20Zach%20Heckendorf%20on%20tour!&amp;url=http://zachheckendorf.com/shows/" target="_blank">Tweet</a></p>
-  </div>
-  <div class="clear"></div>     
-</div><div class="tour_dates_content_module">
-  <div class="dates">
-    <p class="month">MAY</p>
-    <p class="day">2</p>
-  </div>
-  <div class="tour_info">
-    <p class="city">New York, NY | 8:00PM</p>
-    <p class="artist">The Beacon Theatre</p>
-    <p class="sub_artist">w/ Rodrigo Y Gabriela</p>
-    <p class="more_info"><a href="http://goo.gl/gBGMft">Tickets</a>|<a href="https://twitter.com/intent/tweet?text=Check%20out%20Zach%20Heckendorf%20on%20tour!&amp;url=http://zachheckendorf.com/shows/" target="_blank">Tweet</a></p>
-  </div>
-  <div class="clear"></div>     
-</div><div class="tour_dates_content_module">
-  <div class="dates">
-    <p class="month">MAY</p>
-    <p class="day">6</p>
-  </div>
-  <div class="tour_info">
-    <p class="city">Los Angeles, CA | 8:00PM</p>
-    <p class="artist">The Orpheum Theatre</p>
-    <p class="sub_artist">w/ Rodrigo Y Gabriela</p>
-    <p class="more_info"><a href="http://goo.gl/UWJN0s">Tickets</a>|<a href="https://twitter.com/intent/tweet?text=Check%20out%20Zach%20Heckendorf%20on%20tour!&amp;url=http://zachheckendorf.com/shows/" target="_blank">Tweet</a></p>
-  </div>
-  <div class="clear"></div>     
-</div></div>
-</div>
+      <div class="tour_dates_header">
+        <h1>Tour Dates</h1>
+        <a href="/shows/">view all</a>
+      </div>
+      <div class="entries_container">
+
+        <% @events.each do |event| %>
+          <div class="tour_dates_content_module">
+            <div class="dates">
+              <p class="month">
+                <% date = DateTime.parse(event["time"])  %>
+                <%= date.strftime('%^b') %>
+                <%# event %>
+              </p>
+              <p class="day"><%= date.strftime('%d') %></p>
+            </div>
+            <div class="tour_info">
+              <p class="city"><%= event["location"]["city"].split(',')[0..1].join(',') %> | <%= date.strftime('%l:%M%p') %></p>
+              <p class="venue"><%= link_to event["venue"]["displayName"], event["venue"]["uri"] %></p>
+              <p class="sub_artist">w/ <%= link_to event["headliner"]["artist"]["displayName"], event["headliner"]["artist"]["uri"] %></p>
+              <p class="more_info"><%= link_to "TICKETS", event["link"] %>|<a href="#" target="_blank">Tweet</a></p>
+            </div>
+            <div class="clear"></div> 
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
   <div class="right_column">
     <div class="module twitter_module">
