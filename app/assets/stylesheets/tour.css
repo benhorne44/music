@@ -1,4 +1,4 @@
-/*div.tour_dates_header {
+div.tour_dates_header {
   width: 310px;
   height: 60px;
   background-image: url('tour_dates_header_bg.png');
@@ -205,4 +205,4 @@ div.tour_dates_content div.more_info a {
 div.tour_dates_content div.more_info a:hover {
   text-decoration: underline;
 }
-*/
+
