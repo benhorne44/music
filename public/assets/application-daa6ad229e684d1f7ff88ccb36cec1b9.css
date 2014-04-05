@@ -107,15 +107,18 @@ div.graphic_container div.graphic div.gallery div.menu div.menu_item.active {
 */
 
 
-.branding {
+/*.branding {*/
+  
   /*background-image: url('branding.png');*/
   /*background-repeat:no-repeat;*/
-  font-size: 6.25em;
+  
+  /*font-size: 6.25em;
   font-weight:  500;
   font-family: 'Londrina Solid', helvetica, arial, sans-serif;
   height: 80px;
   text-align: center;
-}
+}*/
+
 /*div.nav_container {
   margin: 0 auto;
   width: 960px;
@@ -226,8 +229,7 @@ div.nav_container ul.navigation li a.photos.active {
 }
 div.nav_container ul.navigation li a.store {
   margin-right: 0;
-  /* last item doesn't need margin-right */
-
+  /* last item doesn't need margin-right 
 
   width: 111px;
   height: 41px;
@@ -242,6 +244,7 @@ div.nav_container ul.navigation li a.store.active {
   background-repeat: no-repeat;
   background-position: 0px -42px;
 }
+*/
 */
 div.post_content_container {
   margin-top: 2px;
@@ -397,10 +400,8 @@ div.pagination a.next_page {
 div.pagination a.next_page:hover {
   text-decoration: underline;
 }
-*/
 
-/*/*/
-*/*@import 'main_menu.css';
+@import 'main_menu.css';
 @import 'homepage_gallery.css';
 @import 'posts.css';
 @import 'tour.css';
@@ -408,7 +409,7 @@ div.pagination a.next_page:hover {
 /* =========================================================================
    Reset CSS
 /*========================================================================== */
-/*html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -427,7 +428,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}*/
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -1413,3 +1414,4 @@ div.tour_dates_content div.more_info a {
 div.tour_dates_content div.more_info a:hover {
   text-decoration: underline;
 }
+
