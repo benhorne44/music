@@ -11,6 +11,7 @@ gem "figaro"
 gem 'faraday'
 gem 'addressable'
 gem 'tumblr_client'
+gem 'instagram'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -40,6 +41,11 @@ end
 
 group :production do
   gem 'rails_12factor', group: :production
+end
+
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 # Use ActiveModel has_secure_password

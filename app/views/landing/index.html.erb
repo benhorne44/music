@@ -109,28 +109,19 @@
   <div class="left_column">
     <div class="module latest_module">
   <div class="black_header">
-    <h1>The Latest</h1>
-  </div>
-  <div class="posts">
-<div class="news_content_module">
-  <h2>NEW CONCERT DATES WITH RODRIGO Y GABRIELA</h2>
-  <p><span>Zach will be headed out with Rodrigo Y Gabriela this May for several dates in NY, CA and WA. &nbsp;Full tour dates are <a href="http://www.zachheckendorf.com/shows" target="_blank">here</a></span></p>
-  <a href="http://zachheckendorf.com/news/">Read More</a>
+  <h1>The Latest</h1>
 </div>
+<div class="posts">
+  <% @blog_posts.each do |post| %>
+    <div class="news_content_module">
+      <h2><%= post["title"] %></h2>
+      <% date = DateTime.parse(post["date"]) %>
+      <h4><%= date.strftime("%b %e, %Y") %></h4>
+      <p><span><%= post["body"].html_safe %></a></span></p>
+      <%= link_to "Read More", post["url"] %>
+    </div>
+  <% end %>
 
-<div class="news_content_module">
-  <h2>Zach Heckendorf at SxSW</h2>
-  <p><span>Zach Heckendorf will be headed down to Austin for SxSW on Thursday, March 13th to play the Colorado Music Party at&nbsp;</span><a href="http://www.the512on6th.com/" target="_blank">The 512</a><span>. &nbsp;Full details are on the tour page and&nbsp;at&nbsp;</span><a href="http://www.coloradomusicparty.com/" target="_blank"></a><a href="http://www.ColoradoMusicparty.com" target="_blank">www.ColoradoMusicparty.com</a></p>
-  <a href="http://zachheckendorf.com/news/">Read More</a>
-</div>
-
-<div class="news_content_module">
-  <h2>Help Create Music. Become A Part of Zach Heckendorf's New Album on Kickstarter</h2>
-  <p class="p1">My friends, we are incredibly excited to launch our <a href="http://www.kickstarter.com/projects/2003887588/zach-heckendorf-the-new-album" target="_blank">Kickstarter campaign today - right here</a>!&nbsp;With your help we can make a new record that (in the words of Gift of Gab) will bump for a thousand years! &nbsp;We have 30 days to make this a successful Kickstarter campaign so help us spread the word like wildfire (<a href="https://www.facebook.com/zachheckendorf" target="_blank">Facebook</a>, <a href="https://twitter.com/zheckendorf" target="_blank">Twitter</a> and of course word of mouth). &nbsp;Can’t wait to share our new music with you guys. &nbsp;Let’s make this new record a reality!</p>
-<p class="p1">Lots of love,</p>
-<p class="p1"><span>Zach and Curtis</span></p>
-  <a href="http://zachheckendorf.com/news/">Read More</a>
-</div>
 </div>
 </div>
   </div>
@@ -186,18 +177,7 @@
   </div>
     <% end %>
 
-<div class="twitter_content">
-  <p>Just want to let everyone know that Curtis Halle and I are working hard to to get you guys some new tunes.  Thanks... <a href="http://t.co/mJyzUVQiQp" target="_blank">http://t.co/mJyzUVQiQp</a></p>
-  <div class="twitter_options_container"> 
-    <ul class="twitter_options">
-      <li class="date"></li><br>
-      <li class="grey_list"><a href="https://twitter.com/intent/tweet?in_reply_to=318028939064905728" target="_blank">reply</a></li>
-      <li class="grey_list"><a href="https://twitter.com/intent/retweet?tweet_id=318028939064905728" target="_blank">retweet</a></li>
-      <li class="grey_list"><a href="https://twitter.com/intent/favorite?tweet_id=318028939064905728" target="_blank">favorite</a></li>
-    </ul>
-  </div>
-</div></div>
-</div>
+
     <div class="spacer"></div>
     <div class="module instagram_module">
   <div class="black_header">

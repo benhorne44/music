@@ -1,7 +1,7 @@
 class LandingController < ApplicationController
 
   def index
-    response = Twitter.user_timeline("zheckendorf", count: 3)
+    response = Twitter.user_timeline("zheckendorf", count: 5)
     @tweet = response.first
     @tweets = response
 
@@ -21,8 +21,31 @@ class LandingController < ApplicationController
       }
     end
     @events = @events[0...6]
+
+    response = Faraday.get("http://api.tumblr.com/v2/blog/zachheckendorf.tumblr.com/posts/text?api_key=#{ENV['TUMBLR_OAUTH_KEY']}")
+    blog_posts = JSON.parse(response.body)
+    @blog_posts = []
+    # @blog_posts = blog_posts["response"]["posts"].first
+    blog_posts["response"]["posts"].each do |post|
+      if post["body"].nil?
+        body = post["description"]
+      elsif post["description"].nil?
+        body = post["body"]
+      else
+        body = ''
+      end
+      @blog_posts << {
+        "url" => post["url"],
+        "date" => post["date"],
+        "title" => post["title"],
+        # "body" => body || ''
+        "body" => post["body"]
+        # "description" => post["description"]
+      }
+    end
+    @blog_posts = @blog_posts[0...3]
     # @events = events
     # @events = event_response["resultsPage"]["results"]["event"].first
-    # raise events.inspect
+    # raise blog_posts["response"]["posts"].map(&:keys).uniq.inspect
   end
 end
