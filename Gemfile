@@ -11,7 +11,7 @@ gem "figaro"
 gem 'faraday'
 gem 'addressable'
 gem 'tumblr_client'
-gem 'instagram'
+# gem 'instagram'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
