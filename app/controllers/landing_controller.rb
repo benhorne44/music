@@ -44,8 +44,18 @@ class LandingController < ApplicationController
       }
     end
     @blog_posts = @blog_posts[0...3]
+    # 98594d38345f45c3863b96934a4e6ed7
+    # response = Faraday.get("https://api.instagram.com/oauth/authorize/?client_id=c9d81054cf0141f0a3a00d4a36473da0&redirect_uri=http://localhost:3000/instagram&response_type=access_token")
+    response = Faraday.get("https://api.instagram.com/v1/users/226631511/?access_token=258991520.c9d8105.9cee1d23e4a64b48a1d6bf3d16bb1cb1")
+
+    @instagram = JSON.parse(response.body)
+
     # @events = events
     # @events = event_response["resultsPage"]["results"]["event"].first
-    # raise blog_posts["response"]["posts"].map(&:keys).uniq.inspect
+    raise @instagram.inspect
+  end
+
+  def instagram
+    fail
   end
 end
