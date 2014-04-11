@@ -404,11 +404,11 @@ ul.twitter_options li.grey_list a:hover {
 .instagram_content {
   margin-top: 1px;
   padding-top: 20px;
-  padding-right: 18px;
+  padding-right: 12px;
   padding-bottom: 20px;
   padding-left: 18px;
-  width: 275px;
-  height: auto;
+  width: 285px;
+  height: 205px;
   background-image: url('news_content_bg.png');
   background-repeat: repeat;
 }
@@ -423,9 +423,19 @@ ul.twitter_options li.grey_list a:hover {
   width: 65px;
   height: 65px;
 }
+
+.instagram_content .instagram-thumbnail {
+  float: left;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 65px;
+  height: 65px;
+}
+
 .image_rows img.thumb_last {
   float: left;
   padding-right: 0px;
+  display: block;
   width: 65px;
   height: 65px;
 }
@@ -440,7 +450,7 @@ ul.twitter_options li.grey_list a:hover {
   background-repeat: repeat-x;
 }
 .newsletter_signup_container {
-  margin: 0 auto;
+  padding-top: 10px;
   width: 960px;
   height: 40px;
   clear: both;
@@ -542,6 +552,7 @@ input.submit {
 .footer_container_bottom {
   width: 100%;
   height: 193px;
+  margin-top: 15px;
   background-image: url('footer_bg.jpg');
   background-repeat: repeat-x;
 }
@@ -808,5 +819,9 @@ li.white_item a:hover {
     height: auto;
   background-image: url('news_content_bg.png');
   background-repeat: repeat;
+}
+
+input.newsletter-submit {
+  background-image: url('footer_bg.jpg');
 }
 

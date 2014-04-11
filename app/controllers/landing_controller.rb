@@ -45,13 +45,16 @@ class LandingController < ApplicationController
     end
     @blog_posts = @blog_posts[0...3]
     # response = Faraday.get("https://api.instagram.com/oauth/authorize/?client_id=#{ENV['INSTAGRAM_CLIENT_ID']}&redirect_uri=http://localhost:3000/instagram&response_type=access_token")
-    response = Faraday.get("https://api.instagram.com/v1/users/226631511/?access_token=#{ENV['INSTAGRAM_ACCESS_TOKEN']}")
+    response = Faraday.get("https://api.instagram.com/v1/users/226631511/media/recent/?access_token=#{ENV['INSTAGRAM_ACCESS_TOKEN']}")
 
-    @instagram = JSON.parse(response.body)
-
+    instagram = JSON.parse(response.body)
+    @instagram = []
+    instagram["data"][0...12].each do |image|
+      @instagram << {"link" => image["link"], "thumbnail" => image["images"]["thumbnail"]["url"]}
+    end
     # @events = events
     # @events = event_response["resultsPage"]["results"]["event"].first
-    raise @instagram.inspect
+    # raise @instagram.first.inspect
   end
 
   def instagram

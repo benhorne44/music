@@ -184,7 +184,14 @@
     <h1>Instagram</h1>
     <a href="http://statigr.am/zheckendorf" target="_blank">view all</a>
   </div>
-  <div class="instagram_content"><a href="http://instagram.com/p/kAabm0F6Eo/" target="_blank"><img class="thumb" src="http://distilleryimage4.s3.amazonaws.com/2b5a1fcc8dd511e39dcd12ec51143e68_5.jpg" width="64.5" height="64.5"></a><a href="http://instagram.com/p/etJutdF6E0/" target="_blank"><img class="thumb" src="http://distilleryimage8.s3.amazonaws.com/8396e904264c11e3a7f822000ae912d2_5.jpg" width="64.5" height="64.5"></a><a href="http://instagram.com/p/dLi1LTl6LT/" target="_blank"><img class="thumb" src="http://distilleryimage3.s3.amazonaws.com/e7a9266a088211e3b0f022000a9f1369_5.jpg" width="64.5" height="64.5"></a><a href="http://instagram.com/p/co9YVDl6El/" target="_blank"><img class="thumb" src="http://distilleryimage1.s3.amazonaws.com/f04c283cfdf411e295d322000aa80060_5.jpg" width="64.5" height="64.5"></a><a href="http://instagram.com/p/cLQIMJF6JD/" target="_blank"><img class="thumb" src="http://distilleryimage3.s3.amazonaws.com/1301836ef4e411e2b55122000a1f9be7_5.jpg" width="64.5" height="64.5"></a><a href="http://instagram.com/p/b93G82l6KV/" target="_blank"><img class="thumb" src="http://distilleryimage5.s3.amazonaws.com/e874e3a8f0cd11e29d7a22000a1f9d9b_5.jpg" width="64.5" height="64.5"></a><a href="http://instagram.com/p/bh1mHWl6Kx/" target="_blank"><img class="thumb" src="http://distilleryimage1.s3.amazonaws.com/8f9e9890e84011e28d4922000aa821c8_5.jpg" width="64.5" height="64.5"></a><a href="http://instagram.com/p/bIOnWtF6CT/" target="_blank"><img class="thumb" src="http://distilleryimage11.s3.amazonaws.com/da2dda20e06f11e28d1822000a1f8cf0_5.jpg" width="64.5" height="64.5"></a><a href="http://instagram.com/p/aL7159l6PG/" target="_blank"><img class="thumb" src="http://distilleryimage2.s3.amazonaws.com/6fb923cace0911e282e122000a1f9aae_5.jpg" width="64.5" height="64.5"></a><a href="http://instagram.com/p/ZTu8TYF6Ec/" target="_blank"><img class="thumb" src="http://distilleryimage0.s3.amazonaws.com/b075989abce211e2b88822000a9f1947_5.jpg" width="64.5" height="64.5"></a><a href="http://instagram.com/p/ZJ26fDF6Km/" target="_blank"><img class="thumb" src="http://distilleryimage6.s3.amazonaws.com/2b97075eb9df11e2b10722000a1f98d4_5.jpg" width="64.5" height="64.5"></a><a href="http://instagram.com/p/YC7o_Kl6JV/" target="_blank"><img class="thumb" src="http://distilleryimage5.s3.amazonaws.com/10a5f640a43a11e28bf722000a1f92f7_5.jpg" width="64.5" height="64.5"></a></div>
+  <div class="instagram_content">
+      <% @instagram.each do |image| %>
+          <%= link_to image["link"] do %>
+            <%= image_tag image["thumbnail"], class:"instagram-thumbnail" %>
+        
+          <% end %>
+        <% end %>
+  </div>
 </div>
   </div>
 </div>
@@ -198,7 +205,7 @@
       <input type="text" value="" name="FNAME" id="mce-FNAME" class="required first_name" placeholder="First Name">
       <input type="text" value="" name="LNAME" id="mce-LNAME" class="required last_name" placeholder="Last Name">
       <input type="text" value="" name="MMERGE3" id="mce-MMERGE3" class="zip_code" placeholder="Zip Code">
-      <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button submit">
+      <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="newsletter-submit button submit">
       <div id="mce-responses" class="clear">
         <div class="response" id="mce-error-response" style="display:none"></div>
         <div class="response" id="mce-success-response" style="display:none"></div>
