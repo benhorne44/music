@@ -7,7 +7,13 @@ class LandingController < ApplicationController
 
     response = Faraday.get("http://api.songkick.com/api/3.0/artists/2849436/calendar.json?apikey=#{ENV['SONGKICK_API_KEY']}")
     event_response = JSON.parse(response.body)
-    events = event_response["resultsPage"]["results"]["event"]
+    events = event_response["resultsPage"]["results"]["event"] || []
+    if events == []
+      response = Faraday.get("http://api.songkick.com/api/3.0/artists/2849436/gigography.json?apikey=#{ENV['SONGKICK_API_KEY']}")
+      event_response = JSON.parse(response.body)
+      events = event_response["resultsPage"]["results"]["event"] || []
+    end
+
     @events = []
     events.each do |event|
       @events << {
@@ -19,8 +25,9 @@ class LandingController < ApplicationController
         "location" => event["location"],
         "link" => event["uri"]
       }
+
     end
-    @events = @events[0...6]
+    @events = @events[-8...-1]
 
     response = Faraday.get("http://api.tumblr.com/v2/blog/zachheckendorf.tumblr.com/posts/text?api_key=#{ENV['TUMBLR_OAUTH_KEY']}")
     blog_posts = JSON.parse(response.body)

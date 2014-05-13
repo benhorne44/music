@@ -133,12 +133,17 @@
       </div>
       <div class="entries_container">
 
-        <% @events.each do |event| %>
+        <% @events.each.with_index(1) do |event, index| %>
           <div class="tour_dates_content_module">
             <div class="dates">
               <p class="month">
-                <% date = DateTime.parse(event["time"])  %>
-                <%= date.strftime('%^b') %>
+                <% if event["time"] %>
+                  <% date = DateTime.parse(event["time"])  %>
+                  <%= date.strftime('%^b') %>
+                <% else %>
+                  <% date = DateTime.parse("2014-12-#{index}T00:00:00-0700")  %>
+                  <%= date.strftime('%^b') %>
+                <% end %>
                 <%# event %>
               </p>
               <p class="day"><%= date.strftime('%d') %></p>
