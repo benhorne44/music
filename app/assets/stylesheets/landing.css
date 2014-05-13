@@ -11,3 +11,8 @@
   text-align: center;
 }
 
+div.gallery_item img{
+  margin: auto;
+  display: block; 
+}
+
